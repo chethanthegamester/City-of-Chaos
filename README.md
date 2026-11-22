@@ -1,4 +1,4 @@
-# City of Chaos — Prototype 0.1
+# City of Chaos — Prototype 0.3
 
 An original browser-first 3D city exploration and driving prototype. This is an independent project and is not affiliated with Rockstar Games or GTA.
 
@@ -21,7 +21,7 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 - Escape: release the mouse
 
 ## Current limitations
-- Procedural placeholder city geometry, not final art; road markings and curbs are an early pass pending the user's reference photo.
+- City art is still procedural and stylized. Prototype 0.3 adds a dusk waterfront skyline, illuminated towers, a convention-centre landmark, bridge, and ferris-wheel silhouette based on the user's reference image; it is an original interpretation, not a copy.
 - Basic driving; full collision and pedestrian/traffic systems are not implemented. Character movement now has acceleration smoothing and a basic jump.
 - No missions, accounts, cloud saves, sound, or mobile touch controls yet.
 - Three.js loads from a CDN, so an internet connection is required.
@@ -51,6 +51,9 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 - [ ] Verify keyboard controls in the user's browser
 - [ ] Tune camera and vehicle handling from user feedback
 - [ ] Add collision boundaries and road-aware movement
+- [x] First dusk lighting and waterfront skyline pass
+- [x] Add illuminated skyline windows and original waterfront landmarks
+- [ ] Review city scale, road layout, and skyline placement with the user
 
 ### Stage 2 — Core game systems (planned)
 - [ ] Improved character animations
@@ -60,7 +63,9 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 - [ ] Save/load system
 - [ ] Audio and settings
 
-### Stage 3 — World building (planned)
+### Stage 3 — World building
+- [x] First distinct waterfront skyline district (procedural blockout)
+- [ ] Add more original districts and recognizable landmarks
 - [ ] Distinct city districts
 - [ ] Original buildings and landmarks
 - [ ] Traffic and pedestrian simulation
@@ -84,3 +89,4 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 ## Changelog
 - 0.1: First prototype committed. Core scene, movement, car and HUD are implemented in code. Browser play-testing remains pending.
 - 0.2: Improved keyboard input handling, reduced HUD obstruction, added early dashed lane markings/curbs, and added smoother character movement plus jump.
+- 0.3: Added a stylized dusk palette, waterfront, illuminated skyline towers, convention-centre landmark, bridge, and ferris-wheel silhouette from the user's visual reference. Still needs browser review and visual tuning.
