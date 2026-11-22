@@ -25,7 +25,7 @@ function box(w,h,d,m,x,y,z){const o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),
 const ground=new THREE.Mesh(new THREE.PlaneGeometry(500,500),groundMat);ground.rotation.x=-Math.PI/2;ground.position.y=-.08;ground.receiveShadow=true;scene.add(ground);
 // Clean city grid: roads run through the gaps between building blocks.
 const roadCoords=[];
-for(let n=-5;n<=5;n++)roadCoords.push(18+n*36);
+for(let n=-5;n<=4;n++)roadCoords.push(18+n*36);
 roadCoords.push(0);
 const roadWidthAt=c=>c===0?20:14;
 for(const c of roadCoords){
