@@ -15,13 +15,14 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 - D / Right Arrow: move right / steer right
 - Shift: run
 - E: enter or exit the blue car (stand close)
+- Space: jump
 - Click the game: capture the mouse for camera look
 - Mouse: look around
 - Escape: release the mouse
 
 ## Current limitations
-- Procedural placeholder city geometry, not final art.
-- Basic driving; full collision and pedestrian/traffic systems are not implemented.
+- Procedural placeholder city geometry, not final art; road markings and curbs are an early pass pending the user's reference photo.
+- Basic driving; full collision and pedestrian/traffic systems are not implemented. Character movement now has acceleration smoothing and a basic jump.
 - No missions, accounts, cloud saves, sound, or mobile touch controls yet.
 - Three.js loads from a CDN, so an internet connection is required.
 
@@ -43,7 +44,10 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 - [x] Basic HUD and control instructions
 - [ ] Verify locally in the user's browser
 - [x] Correct forward/reverse and left/right control directions
-- [x] Add arrow-key support for movement and driving
+- [x] Add arrow-key support for movement and driving (reads both key codes and key values)
+- [x] Remove the large on-screen controls panel
+- [x] Add early dashed lane markings and raised curbs
+- [x] Add smoother on-foot acceleration and a basic jump
 - [ ] Verify keyboard controls in the user's browser
 - [ ] Tune camera and vehicle handling from user feedback
 - [ ] Add collision boundaries and road-aware movement
@@ -79,3 +83,4 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 
 ## Changelog
 - 0.1: First prototype committed. Core scene, movement, car and HUD are implemented in code. Browser play-testing remains pending.
+- 0.2: Improved keyboard input handling, reduced HUD obstruction, added early dashed lane markings/curbs, and added smoother character movement plus jump.
