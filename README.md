@@ -9,7 +9,10 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 3. Right-click `index.html` and choose **Open with Live Server**.
 
 ## Controls
-- WASD: move / accelerate and reverse
+- W / Up Arrow: move forward / accelerate
+- S / Down Arrow: move backward / reverse
+- A / Left Arrow: move left / steer left
+- D / Right Arrow: move right / steer right
 - Shift: run
 - E: enter or exit the blue car (stand close)
 - Click the game: capture the mouse for camera look
@@ -39,6 +42,9 @@ Use a local web server because the game loads Three.js as a JavaScript module:
 - [x] Enter / exit vehicle
 - [x] Basic HUD and control instructions
 - [ ] Verify locally in the user's browser
+- [x] Correct forward/reverse and left/right control directions
+- [x] Add arrow-key support for movement and driving
+- [ ] Verify keyboard controls in the user's browser
 - [ ] Tune camera and vehicle handling from user feedback
 - [ ] Add collision boundaries and road-aware movement
 
